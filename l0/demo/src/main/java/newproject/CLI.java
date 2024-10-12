@@ -2,8 +2,13 @@ package newproject;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class CLI 
+public final class CLI 
 {
+    private CLI() throws InstantiationError
+    {
+
+    }
+
     public static void run()
     {
         Scanner scanner = new Scanner(System.in);
@@ -32,7 +37,10 @@ public class CLI
                     if(!(command.equals("exit")))
                     {
                         if(parts.length < 3)
-                        throw new IllegalArgumentException();
+                        {
+                            throw new IllegalArgumentException();
+                        }
+                        
                     }
                    
 
