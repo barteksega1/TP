@@ -6,8 +6,8 @@ import java.util.Scanner;
 public final class CLI 
 {
     private CLI() throws InstantiationError
-    {
-
+    { 
+        //git wersja ze strony
     }
 
     public static void run()
