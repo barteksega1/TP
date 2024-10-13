@@ -1,4 +1,5 @@
 package newproject;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -27,20 +28,23 @@ public final class CLI
                         continue;
                     }
 
-                    String parts[] = input.split("\\s+", 3);
+                    String[] parts = input.split("\\s+", 3);
 
                     String command = parts[0];
-                    //Double no1 = Double.parseDouble(parts[1]); pmd czegos uczy...
+                    //Double no1 = Double.parseDouble(parts[1]); 
                     //Double no2 = Double.parseDouble(parts[2]);
 
 
                     if(!(command.equals("exit")))
                     {
-                        if(parts.length < 3)
+                        if(!(command.equals("command_list")))
                         {
-                            throw new IllegalArgumentException();
+                            if(parts.length < 3)
+                            {
+                                throw new IllegalArgumentException();
+                            }
+
                         }
-                        
                     }
                    
 

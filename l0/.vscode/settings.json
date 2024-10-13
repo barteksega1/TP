@@ -1,3 +1,6 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "maven.view": "flat",
+    "java.checkstyle.configuration": "/google_checks.xml",
+    "java.checkstyle.version": "10.18.2"
 }
