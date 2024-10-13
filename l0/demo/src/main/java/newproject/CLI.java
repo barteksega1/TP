@@ -7,7 +7,7 @@ public final class CLI
 {
     private CLI() throws InstantiationError
     {
-        //git wersja ze strony3
+        //git wersja ze strony
     }
 
     public static void run()
