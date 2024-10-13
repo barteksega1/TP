@@ -7,7 +7,7 @@ public final class CLI
 {
     private CLI() throws InstantiationError
     {
-
+        //git wersja z VSC
     }
 
     public static void run()
